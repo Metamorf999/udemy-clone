@@ -80,6 +80,15 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: solid #A435F0 1px;
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid #A435F0 1px;
+
 }
 .recommended{
     padding: 10px;
@@ -155,9 +164,22 @@ body{
     padding: 2%;
     background-color: white;
     width: 35%;
-
     position: absolute;
     left: 2%;
-   top: 10%;
-    
+    top: 10%;
+    animation-name: zoom;
+    animation-duration:2s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+@keyframes zoom{
+0%{
+    transform:scale(0);
+    opacity: 0;
+
+}
+100%{
+    opacity: 1;
+    transform: scale(1);
+}
 }
